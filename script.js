@@ -29,3 +29,21 @@ window.addEventListener('DOMContentLoaded', () => {
     dayEl.textContent = today.getDate().toString().padStart(2, '0');
     weekdayEl.textContent = weekdays[today.getDay()];
 });
+
+document.querySelector('.cardShare').addEventListener('click', () => {
+    const shareUrl = 'https://ganeshkumar723.github.io/designer-Card/';
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'Check out this Designer Card!',
+            text: 'Look at this card design I built: ',
+            url: shareUrl
+        })
+        .then(() => console.log('Shared successfully!'))
+        .catch(err => console.error(err));
+    } else {
+        navigator.clipboard.writeText(shareUrl).then(() => {
+            alert('Link copied to clipboard!');
+        });
+    }
+});
