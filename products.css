@@ -1,0 +1,168 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* step -2 - component */
+.products {
+    /* background-color: rgb(253, 252, 252);   */
+
+}
+
+/* step -3 - componentContainer */
+.productsContainer {
+    /* background-color: rgb(91, 226, 12); */
+
+}
+
+/* step -4 - row */
+.productsBody {
+    /* background-color: rgb(255, 255, 255); */
+
+}
+
+/* step -5 - column */
+.productsBlock {
+    /* background-color: #fc03c6; */
+
+}
+
+.productsBlock1 {
+    /* background-color: #fc03c6; */
+
+}
+
+/* step -6 - subColumn */
+.productsBox {
+    position: relative;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 4rem;
+    padding: 2rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-image: url(./assets/images/background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/* step -7 - contentContainer */
+.productsBox .cardHeader {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25rem;
+
+}
+
+.productsBox .cardMain {
+    /* background-color: aqua; */
+
+}
+
+
+.cardDate {
+    display: inline-block;
+    border-radius: 1rem;
+    overflow: hidden;
+    line-height: 1.2;
+    text-align: center;
+    width: 55px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.cardDate .month {
+    display: block;
+    background: #000000;
+    color: #ffffff;
+    font-family: "Inter", serif;
+    padding: 0.4rem 0rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.cardDate .day {
+    display: block;
+    background: #fff;
+    font-family: "Inter", serif;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1px 0;
+}
+
+.cardDate .weekday {
+    display: block;
+    background: #fff;
+    font-family: "Inter", serif;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.2rem 0rem;
+
+}
+
+.cardShare {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    display: block;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cardMembers{
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255,0.5);
+    border-radius: 1rem;
+   padding: 0.8rem 1rem;
+   font-size: 1.4rem;
+    font-weight: 400; 
+    font-family: "Inter", serif;
+    margin-bottom: 1rem;
+}
+
+.productsBox h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+
+}
+
+.connectBtn {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    font-family: "Inter", serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.connectBtn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+
+}
